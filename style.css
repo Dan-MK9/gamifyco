@@ -138,10 +138,23 @@ header div.container-grid {
    padding-top: 80px;
 }
 
-.container-grid img 
-    max-width: 770px;
-    max-height: 655px;
+.imagem-diferentona {
     position: absolute;
-    transform: translate(-50%, -50%);
-    margin-left: 745px;
+}
+
+.imagem-diferentona img {
+    margin-top: -330px;
+
+    display: flex;
+    justify-content: center;
+    height: 660px;
+
+    margin-left: 340px;
+}
+
+.portifolio {
+    position: relative;
+    padding-top: 25%;
+    
+    padding: 300px;
 }
