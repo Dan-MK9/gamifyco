@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: rgba(17, 1, 62, 1);
+}
+
+.container-grid {
+    width: 100vw;
+    max-width: 1375px;
+    margin: 0 auto;
+}
+
+header {
+    height: 125px;
+
+    background: rgb(22,1,77);
+    background: linear-gradient(90deg, rgba(22,1,77,1) 20%, rgba(50,3,179,1) 70%);
+}
+
+header img {
+    width: 300px
+    
+}
+
+header div.container-grid {
+    height: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu {
+    width: 800px;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu a {
+    color: white;
+
+    font-family: 'Rowdies';
+    font-size: 20px;
+
+    text-decoration: underline transparent;
+    text-decoration-thickness: 2px;
+
+    transition: text-decoration 500ms ease;
+}
+
+.menu a:hover {
+    text-decoration-color: rgba(242, 92, 5, 1); 
+}
+
+.banner {
+    height: 1077px;
+    background-image: url(img/banner\ \(1\).svg);
+    background-position: 60% 0%;
+    background-repeat: no-repeat;
+}
+
+.conteudo-banner {
+    padding-top: 140px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: end;
+}
+
+.conteudo-banner p {
+    color: white;
+
+    height: 86px;
+    width: 570px;
+
+    font-family: "Montserrat Subrayada";
+    font-size: 35px;
+    text-align: center;
+}
+
+.conteudo-banner h2 {
+    color: white;
+
+    padding-top: 100px;
+    
+    height: 404px;
+    width: 570px;
+
+    font-family: "Rowdies";
+    font-size: 30px;
+    text-align: center;
+}
+
+.gamificacao {
+    position: relative;
+
+    background: rgb(17,1,62);
+    background: linear-gradient(90deg, rgba(17,1,62,1) 27%, rgba(27,2,98,1) 41%);
+    
+    border-radius: 50px;
+    
+    padding: 300px;
+}
+
+.container-text {
+    height: 150px;
+    width: 595px;
+
+    align-items: center;
+
+    margin-top: -220px;
+    margin-left: -180px;
+}
+
+.gamificacao p {
+    color: white;
+    font-family: "Montserrat Subrayada";
+    font-size: 35px;
+}
+
+.gamificacao h2 {
+    width: 70%;
+
+    color: white;
+    font-family: "Inter";
+    font-size: 22px;
+    text-align: center;
+
+   padding-top: 80px;
+}
+
+.container-grid img 
+    max-width: 770px;
+    max-height: 655px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    margin-left: 745px;
+}
