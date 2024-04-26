@@ -912,7 +912,7 @@ footer button {
     }
 
     .container-cards {
-        padding-top: 65%;
+        padding-top: 70%;
     }
 
     footer {
@@ -927,6 +927,10 @@ footer button {
 @media screen and (max-width: 651px) {
     #portifolio .box {
         padding-top: 7%;
+    }
+
+    .container-cards {
+        padding-top: 70%;
     }
 }
 
@@ -944,11 +948,15 @@ footer button {
     }
 
     .box h2 {
-        font-size: 30px;
+        font-size: 27px;
     }
 
     #cases .box {
         padding-top: 9%;
+    }
+
+    .container-cards {
+        padding-top: 85%;
     }
 
     #portifolio .box {
@@ -985,6 +993,16 @@ footer button {
 
     .card {
         height: 540px;
+    }
+}
+
+@media screen and (max-width: 520px) {
+    .conteudo-banner h2 {
+        width: 445px;
+    }
+
+    .conteudo-banner h3 {
+        width: 425px;
     }
 }
 
