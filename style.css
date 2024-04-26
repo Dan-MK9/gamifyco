@@ -1045,6 +1045,47 @@ footer button {
     }
 }
 
+@media screen and (max-width: 423px) {
+    .conteudo-banner h2 {
+        width: 400px;
+    }
+
+    .conteudo-banner h3 {
+        width: 385px;
+    }
+
+    .box h2 {
+        font-size: 24px;
+    }
+
+    .container-cards {
+        padding-top: 100%;
+    }
+
+    .card {
+        width: 390px;
+    }
+
+    footer button {
+        display: none;
+    }
+
+    .container-text-f {
+        width: 247px;
+        text-align: center;
+    }
+
+    footer .container-grid {
+        display: flex;
+        justify-content: center;
+    }
+
+    footer {
+        display: flex;
+        justify-content: center;
+    }
+}
+
 @media screen and (max-width: 400px) {
     h2 {
         font-size: 25px;
