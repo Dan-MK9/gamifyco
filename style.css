@@ -1,3 +1,9 @@
+:root {
+    --roxo-brilho: #3A04D0;
+    --laranja-de-cria: #F25C05;
+    --roxo-fundo: #11013E;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -13,24 +19,29 @@ body {
 }
 
 .container-grid {
-    width: 100vw;
+    width: 90vw;
     max-width: 1375px;
     margin: 0 auto;
 }
 
-header {
+#header {
     height: 125px;
 
     background: rgb(22,1,77);
     background: linear-gradient(90deg, rgba(22,1,77,1) 20%, rgba(50,3,179,1) 70%);
+
+    background-position: 100% 50%;
 }
 
-header img {
-    width: 300px
-    
+header button {
+    display: none;
 }
 
-header div.container-grid {
+#header img {
+    width: 300px;
+}
+
+#header .container-grid {
     height: 100%;
 
     display: flex;
@@ -47,115 +58,1045 @@ header div.container-grid {
 
 .menu a {
     color: white;
-
     font-family: 'Rowdies';
     font-size: 20px;
 
     text-decoration: underline transparent;
-    text-decoration-thickness: 2px;
-
-    transition: text-decoration 500ms ease;
+    text-decoration-thickness: 4px;
+    transition: text-decoration 300ms ease;
 }
 
 .menu a:hover {
     text-decoration-color: rgba(242, 92, 5, 1); 
 }
 
-.banner {
-    height: 1077px;
-    background-image: url(img/banner\ \(1\).svg);
-    background-position: 60% 0%;
+#banner {
+    height: 845px;
+    
+    background: rgb(17,1,62);
+    background-image: url(img/banner\ proporcinal.png);
     background-repeat: no-repeat;
+
+    background-position: 60% 50%;
 }
 
 .conteudo-banner {
-    padding-top: 140px;
+    padding-top: 100px;
+
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: end;
 }
 
-.conteudo-banner p {
-    color: white;
+.container-text-b {
+    display: none;
+}
 
-    height: 86px;
-    width: 570px;
+h2 {
+    color: white;
 
     font-family: "Montserrat Subrayada";
     font-size: 35px;
+}
+
+h3 {
+    color: white;
+
+    font-family: "Rowdies";
+    font-size: 30px;
+    font-weight: 400;
+}
+
+p {
+    color: white;
+    font-family: "Inter";
+    font-size: 22px;
+}
+
+.conteudo-banner h3 {
+    width: 570px;
+
     text-align: center;
 }
 
 .conteudo-banner h2 {
-    color: white;
+    padding-top: 50px;
 
-    padding-top: 100px;
-    
-    height: 404px;
+    height: 210px;
     width: 570px;
 
-    font-family: "Rowdies";
-    font-size: 30px;
     text-align: center;
 }
 
-.gamificacao {
-    position: relative;
+#gamificacao {
+    height: 570px;
+    display: flex;
 
     background: rgb(17,1,62);
-    background: linear-gradient(90deg, rgba(17,1,62,1) 27%, rgba(27,2,98,1) 41%);
-    
+    background: linear-gradient(90deg, rgba(17,1,62,1) 0%, rgba(26,2,91,1) 100%);
     border-radius: 50px;
-    
-    padding: 300px;
+
+    margin-bottom: 150px;
+}
+
+.screem {
+    display: none;
+}
+
+.vetores {
+    max-width: 50%;
+    display: flex;
+    align-items: center;
+}
+
+.vetores img {
+    max-width: 100%;
+    height: auto;
 }
 
 .container-text {
-    height: 150px;
-    width: 595px;
+    width: 50%;
 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#gamificacao p {
+    width: 75%;
+
+    text-align: center;
+}
+
+#portifolio {
+    height: 570px;
+    
+    background-image: linear-gradient(243deg, rgba(17,1,62,1) 39%, rgba(58,4,208,0) 100%), url(img/Imagem\ do\ jogo.png);
+
+    position: relative;
+
+    border-radius: 50px;
+}
+
+.container-portifolio {
+    width: 100%;
+}
+
+#portifolio .button{
+    color: white;
+    background-color: rgba(242, 92, 5, 1);
+
+    position: absolute;
+    top: calc(75% - 30px);
+
+    bottom: 20px;
+
+    right: 125px;
+    height: 100px;
+    width: 300px;
+
+    border-radius: 100px;
+    border: none;
+
+    font-family: "Rowdies";
+    font-size: 30px;
+
+    cursor: pointer;
+
+    text-transform: uppercase;
+
+    transition: background-color 200ms ease;
+}
+
+#portifolio .button:hover {
+    background-color: rgba(58, 4, 208, 1);
+}
+
+.container-text-s2 {
+    padding-top: 65px;
+    padding-right: 70px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+#portifolio p {
+    width: 420px;
+
+    text-align: center;
+    
+    padding-top: 110px;
+}
+
+#cases .box {
+    display: none;
+}
+
+#cases {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
 
-    margin-top: -220px;
-    margin-left: -180px;
+    margin-top: 150px;
 }
 
-.gamificacao p {
-    color: white;
-    font-family: "Montserrat Subrayada";
-    font-size: 35px;
+#cases h2 {
+    margin-left: 25%;
+    margin-bottom: 70px;
 }
 
-.gamificacao h2 {
-    width: 70%;
+#cases h3 {
+    width: 810px;
+
+    text-align: center;
+
+    margin-bottom: 70px;
+}
+
+.container-cards {
+    width: 90%;
+
+    overflow-x: auto;
+    list-style-type: none;
+    flex-wrap: nowrap;
+    gap: 150px;
+
+    display: flex;
+    justify-content: flex-start;
+}
+
+.card {
+    width: 500px;
+    height: 600px;
+    flex-shrink: 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background: rgb(17,1,62);
+    background: linear-gradient(180deg, rgba(17,1,62,1) 0%, rgba(26,2,91,1) 100%);
+
+    margin-top: 50px;
+
+    border-radius: 60px;
+}
+
+
+.card p {
+    padding: 10%;
+
+    text-align: center;
+}
+
+.card h3 {
+    width: 369px;
+
+    text-align: center;
+}
+
+#contato {
+    height: 700px;
+    background: #1A025B;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    border-radius: 60px;
+    
+    margin-top: 150px;
+    margin-bottom: 150px;
+}
+
+#contato h3 {
+    width: 75%;
+
+    text-align: center;
+
+    padding-top: 85px;
+    padding-bottom: 85px;
+}
+
+#contato form {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+
+    padding-bottom: 30px;
 
     color: white;
     font-family: "Inter";
     font-size: 22px;
-    text-align: center;
-
-   padding-top: 80px;
 }
 
-.imagem-diferentona {
-    position: absolute;
+.campo-esquerda {
+    width: 45%;
+
+    padding-left: 15%;
 }
 
-.imagem-diferentona img {
-    margin-top: -330px;
+.campo-direita {
+    width: 45%;
+
+    padding-right: 15%;
+}
+
+.campo {
+    display: flex;
+    flex-direction: column;
+
+    margin-bottom: 50px;
+}
+
+.campo input {
+    height: 50px;
+
+    color: white;
+    background-color: #11013E;
+
+    border: none;
+    border-radius: 10px;
+
+    outline: none;
+
+    text-indent: 10px;
+
+    font-family: "Inter";
+    font-size: 22px;
+}
+
+.campo textarea {
+    height: 185px;
+
+    color: white;
+    background-color: #11013E;
+
+    border: none;
+    border-radius: 10px;
+
+    padding: 10px;
+
+    font-family: "Inter";
+    font-size: 22px;
+
+    outline: none;
+
+    text-indent: 10px;
+
+    resize: none;
+}
+
+.campo label {
+    margin-bottom: 5px;
+}
+
+.campo input:focus, .campo textarea:focus {
+    outline: 4px solid #F25C05;
+}
+
+.campo input, .campo textarea {
+    transition: outline 0.3s ease;
+}
+
+.campo input:hover, .campo textarea:hover {
+    outline: 4px solid #3A04D0;
+}
+
+#contato button {
+    height: 60px;
+    width: 15%;
+
+    font-family: "Rowdies";
+    font-size: 30px;
+    
+    color: white;
+    background-color: #F25C05;
+
+    border: none;
+    border-radius: 10px;
+
+    cursor: pointer;
+
+    text-transform: uppercase;
+
+    transition: background-color 200ms ease;
+}
+
+#contato button:hover {
+    background-color: #3A04D0;
+}
+
+footer {
+    height: 125px;
+
+    background: rgb(50,3,179);
+    background: linear-gradient(90deg, rgba(50,3,179,1) 0%, rgba(22,1,77,1) 100%);
+}
+
+footer .container-grid {
+    width: 75%;
+    height: 100%;
 
     display: flex;
-    justify-content: center;
-    height: 660px;
-
-    margin-left: 340px;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.portifolio {
-    position: relative;
+footer img {
+    width: 300px;
+}
+
+footer button {
+    display: none;
+}
+
+.redes-sociais {
+    width: 23%;
+    height: 50%;
+}
+
+.container-text-f {
+    display: flex;
+    flex-direction: column;
+
+    font-family: "Inter";
+    font-size: 22px;
+
+    text-align: end;
+}
+
+#politicas {
+    color: white;
+
+    text-decoration: underline transparent;
+    text-decoration-thickness: 2px;
+    transition: text-decoration 300ms ease;
+}
+
+#termos {
+    color: white;
+
+    text-decoration: underline transparent;
+    text-decoration-thickness: 2px;
+    transition: text-decoration 300ms ease;
+}
+
+#politicas:hover {
+    text-decoration-color: rgba(242, 92, 5, 1);
+}
+
+#termos:hover {
+    text-decoration-color: rgba(242, 92, 5, 1);
+}
+
+.icones-redes {
+    width: 210px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.icones-redes a {
+    color: white;
+}
+
+.icones-redes a:hover {
+    color: #F25C05;
+}
+
+#gamificacao .box {
+    display: none;
+}
+
+#portifolio .box {
+    display: none;
+}
+
+#contato .box {
+    display: none;
+}
+
+.box h2 {
+    color: white;
+
+    font-family: "Montserrat Subrayada";
+    font-size: 35px;
+}
+
+@media screen and (max-width: 1318px) {
+    #portifolio .box {
+        display: none;
+    }
+
+    #gamificacao .box {
+        display: none;
+    }
+
+    .container-text {
+        width: 57%;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+        width: 545px;
+    }
+}
+
+@media screen and (max-width: 1265px) {
+    #portifolio .box {
+        display: none;
+    }
+
+    #gamificacao .box {
+        display: none;
+    }
+
+    img {
+        width: 495px;
+    }
+}
+
+@media screen and (max-width: 1245px) {
+    #portifolio .box {
+        display: none;
+    }
+
+    #gamificacao .box {
+        display: none;
+    }
+
+    #banner {
+        max-height: 700px;
+
+        background-image: url(img/banner\ responsivo.png);
+        background-repeat: no-repeat;
+    }
+
+    .conteudo-banner {
+        align-items: center;
+    }
+
+    header {
+        position: relative;
+    }
+
+    header svg {
+        fill: #F25C05;
+    }
+
+    header button {
+        width: 50px;
+
+        display: unset;
+
+        background: none;
+        border: none;
+    }
+
+    nav.menu {
+        height: 500px;
+        width: 350px;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+
+        background-color: #3A04D0;
+
+        position: absolute;
+        top: 125px;
+        right: 0px;
+    }
+}
+
+@media screen and (max-width: 1198px) {
+    #portifolio .box {
+        display: none;
+    }
+
+    #gamificacao .box {
+        display: none;
+    }
+
+    .container-text {
+        width: 57%;
+    }
+
+    .vetores img {
+        width: 450px;
+    }
     
-    padding-top: 25%;
+}
+
+@media screen and (max-width: 1160px) {
+    .vetores img {
+        display: none;
+    }
+
+    #gamificacao {
+        display: flex;
+        justify-content: center;
+    }
+
+    .container-text {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    footer .container-grid {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .screem {
+        display: flex;
+        justify-content: center;
+        padding-top: 180px;
+    }
+
+    .vetores img {
+        display: none;
+    }
+
+    .container-text {
+        width: 600px;
+        
+        text-align: center;
+        justify-content: center;
+    }
+
+    .container-text {
+        display: none;
+    }
+
+    #gamificacao {
+        margin-bottom: 40px;
+        flex-direction: column;
+        border-radius: 0px;
+        background-image: none;
+        background-color: var(--roxo-fundo);
+        height: 725px;
+        width: 100%;
+        justify-content: center;
+    }
+
+    #gamificacao .box {
+        width: 100%;
+        height: 135px;
     
-    padding: 300px;
+        background-color: #F25C05;
+    
+        display: flex;
+        align-items: center;
+        justify-content: center; 
+    }
+
+    #portifolio {
+        height: 725px;
+        width: 100%;
+        border-radius: 0px;
+        background-repeat: no-repeat;
+        position: relative;
+    }
+
+    .container-text-s2 {
+        display: none;
+    }
+
+    #portifolio .box {
+        width: 100%;
+        height: 135px;
+
+        background-color: #F25C05;
+
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+
+        padding-top: 5%;
+    }
+
+    #portifolio p {
+        width: 420px;
+
+        text-align: center;
+
+        padding-top: 270px;
+    }
+
+    #cases {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    
+        margin-top: 0px;
+    }
+
+    .text-cases {
+        display: none;
+    }
+
+    #cases .box {
+        width: 100%;
+        height: 135px;
+
+        background-color: #F25C05;
+
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+
+        padding-top: 5%;
+    }
+
+    #cases h2 {
+        margin-left: 0;
+        margin-bottom: 70px;
+    }
+
+    .screems2 {
+        margin-top: 50px;
+    }
+
+    .container-cards {
+        padding-top: 350px;
+    }
+
+    #contato {
+        width: 100%;
+        height: 1100px;
+        background: var(--roxo-fundo);
+    
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    
+        border-radius: 60px;
+        
+        margin-top: 150px;
+        margin-bottom: 150px;
+    }
+
+    #contato .box {
+        width: 100%;
+        height: 135px;
+
+        background-color: #F25C05;
+
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+
+        padding-top: 5%;
+
+    }
+
+    .campo input {
+        width: 640px;
+    }
+
+    .campo textarea {
+        width: 640px;
+    }
+
+    #campo-nome {
+        background: #220278;
+    }
+
+    #campo-email {
+        background: #220278;
+    }
+
+    #campo-descricao {
+        background: #220278;
+    }
+
+    #contato form {
+        width: 90%;
+        flex-direction: column;
+    }
+
+    .campo-direita {
+        width: 100%;
+        padding-right: 0%;
+        padding-left: 15%;
+    }
+
+    .campo-esquerda {
+        width: 100%;
+        padding-left: 135px;
+        padding-right: 135px;
+    }
+
+    #contato button {
+        width: 150px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    #contato form {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .card {
+        height: 500px;
+    }
+
+    .container-cards {
+        padding-top: 50%;
+    }
+    
+    .screems2 {
+        width: 70%;
+    }
+
+    #cases h3 {
+        width: 100%;
+    }
+
+    .icones-redes {
+        display: none;
+    }
+
+    .campo-esquerda {
+        width: 100%;
+
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    #contato form {
+        width: 70%;
+    }
+
+    .campo input {
+        width: 100%;
+    }
+
+    .campo-direita {
+        width: 100%;
+
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .campo textarea {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .card {
+        height: 500px;
+    }
+
+    #cases .box {
+        padding-top: 7%;
+    }
+
+    .container-cards {
+        padding-top: 65%;
+    }
+
+    footer {
+        height: 200px;
+    }
+
+    .container-text-f {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 651px) {
+    #portifolio .box {
+        padding-top: 7%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    h2 {
+        font-size: 30px;
+    }
+
+    h3 {
+        font-size: 25px;
+    }
+
+    #banner {
+        height: 600px;
+    }
+
+    .box h2 {
+        font-size: 30px;
+    }
+
+    #cases .box {
+        padding-top: 9%;
+    }
+
+    #portifolio .box {
+        padding-top: 9%;
+    }
+
+    #contato .box {
+        padding-top: 9%;
+    }
+
+    footer img {
+        display: none;
+    }
+
+    footer button {
+        display: unset;
+
+        background: none;
+        border: none;
+    }
+
+    footer button svg {
+        width: 150px;
+        height: 150px;
+    }
+
+    .conteudo-banner h2 {
+        width: 500px;
+    }
+
+    .conteudo-banner h3 {
+        width: 485px;
+    }
+
+    .card {
+        height: 540px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    nav.menu {
+        width: 100%;
+    }
+    
+    .box h2 {
+        font-size: 25px;
+    }
+
+    #cases .box {
+        padding-top: 11%;
+    }
+
+    #portifolio .box {
+        padding-top: 11%;
+    }
+
+    #contato .box {
+        padding-top: 11%;
+    }
+
+    .container-cards {
+        padding-top: 90%;
+    }
+
+    .card {
+        width: 430px;
+    }
+
+    .redes-sociais {
+        width: 0;
+        height: 0;
+    }
+
+    .container-text-f {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    h2 {
+        font-size: 25px;
+    }
+
+    h3 {
+        font-size: 20px;
+    }
+
+    .conteudo-banner h2 {
+        width: 375px;
+    }
+
+    .conteudo-banner h3 {
+        width: 330px;
+    }
+
+    .box h2 {
+        text-align: center;
+    }
+
+    .screem {
+        padding-top: 125px;
+    }
+
+    #cases .box {
+        padding-top: 14%;
+    }
+
+    #portifolio .box {
+        padding-top: 14%;
+    }
+
+    #contato .box {
+        padding-top: 14%;
+    }
+
+    #portifolio p {
+        width: 300px;
+    }
+
+    .card {
+        width: 350px;
+    }
+
+    .container-cards {
+        gap: 80px;
+    }
+
+    p {
+        font-size: 19px;
+    }
+
+    #contato form {
+        font-size: 19px;
+    }
+
+    .campo input {
+        font-size: 19px;
+    }
+
+    .campo textarea {
+        font-size: 19px;
+    }
+
+    footer button {
+        display: none;
+    }
+
+    .container-text-f {
+        text-align: center;
+    }
 }
