@@ -261,6 +261,7 @@ p {
     width: 90%;
 
     overflow-x: auto;
+    overflow-y: hidden;
     list-style-type: none;
     flex-wrap: nowrap;
     gap: 150px;
