@@ -1010,6 +1010,7 @@ footer button {
 @media screen and (max-width: 500px) {
     nav.menu {
         width: 100%;
+        display: none;
     }
     
     .box h2 {
@@ -1046,70 +1047,59 @@ footer button {
     }
 }
 
-@media screen and (max-width: 423px) {
-    .conteudo-banner h2 {
-        width: 400px;
-    }
-
-    .conteudo-banner h3 {
-        width: 385px;
-    }
-
-    .box h2 {
-        font-size: 24px;
-    }
-
-    .container-cards {
-        padding-top: 100%;
-    }
-
-    .card {
-        width: 390px;
-    }
-
-    footer button {
-        display: none;
-    }
-
-    .container-text-f {
-        width: 247px;
-        text-align: center;
-    }
-
-    footer .container-grid {
-        display: flex;
-        justify-content: center;
-    }
-
-    footer {
-        display: flex;
-        justify-content: center;
-    }
-}
-
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 460px) {
     h2 {
         font-size: 25px;
     }
 
     h3 {
+        font-size: 22px;
+    }
+
+    p {
         font-size: 20px;
     }
 
-    .conteudo-banner h2 {
-        width: 375px;
-    }
-
-    .conteudo-banner h3 {
-        width: 330px;
+    #portifolio p {
+        margin-left: 15px;
+        margin-right: 15px;
+        width: 92%;
+        padding-top: 310px;
     }
 
     .box h2 {
         text-align: center;
+        width: 300px;
+    }
+    .conteudo-banner h2 {
+        font-size: 27px;
+        width: 100%;
+        margin-right: 15px;
+        margin-left: 15px;
     }
 
-    .screem {
-        padding-top: 125px;
+    .conteudo-banner h3 {
+        margin-left: 15px;
+        margin-right: 15px;
+        width: 85%;
+    }
+
+    .card {
+        width: 400px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    #header img {
+        width: 280px;
+    }
+
+    #gamificacao p {
+        height: 335px;
+    }
+
+    #banner {
+        height: 700px;
     }
 
     #cases .box {
@@ -1124,39 +1114,78 @@ footer button {
         padding-top: 14%;
     }
 
-    #portifolio p {
-        width: 300px;
-    }
-
     .card {
         width: 350px;
     }
 
     .container-cards {
-        gap: 80px;
+        padding-top: 100%;
+        gap: 75px;
     }
 
-    p {
-        font-size: 19px;
-    }
-
-    #contato form {
-        font-size: 19px;
-    }
-
-    .campo input {
-        font-size: 19px;
-    }
-
-    .campo textarea {
-        font-size: 19px;
+    .container-text-f {
+        text-align: center;
     }
 
     footer button {
         display: none;
     }
 
-    .container-text-f {
-        text-align: center;
+    #contato form {
+        font-size: 20px;
+    }
+
+    .campo input {
+        font-size: 20px;
+    }
+
+    .campo textarea {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    #header img {
+        width: 250px;
+    }    
+
+    .screem {
+        padding-top: 150px;
+    }
+
+    .container-cards {
+        padding-top: 125%;
+    }
+
+    .card {
+        width: 320px;
+        height: 600px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    #header img {
+        width: 220px;
+    }
+
+    .screem {
+        padding-top: 100px;
+    }
+
+    .card {
+        width: 290px;
+        height: 600px;
+    }
+
+    .container-cards {
+        padding-top: 150%;
+    }
+
+    #portifolio .box {
+        padding-top: 16%;
+    }
+
+    #cases .box {
+        padding-top: 16%;
     }
 }
