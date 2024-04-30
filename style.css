@@ -1060,6 +1060,14 @@ footer button {
         font-size: 20px;
     }
 
+    footer button svg {
+        display: none;
+    }
+
+    .container-text-f {
+        text-align: center;
+    }
+
     #portifolio p {
         margin-left: 15px;
         margin-right: 15px;
