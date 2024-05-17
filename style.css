@@ -1095,6 +1095,50 @@ footer button {
     .card {
         width: 400px;
     }
+
+    footer {
+        height: 125px;
+    }
+
+    #contato {
+        margin-bottom: 45px;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .screem {
+        padding-top: 150px;
+    }
+    #gamificacao {
+        height: 752px;
+    }
+    .card {
+        width: 375px;
+    }
+
+    #portifolio .box {
+        padding-top: 13%;
+    }
+
+    #portifolio p {
+        padding-top: 300px;
+    }
+
+    #cases .box {
+        padding-top: 13%;
+    }
+
+    #contato .box {
+        padding-top: 13%;
+    }
+
+    #contato {
+        margin-bottom: 45px;
+    }
+
+    footer {
+        height: 125px;
+    }
 }
 
 @media screen and (max-width: 400px) {
@@ -1150,6 +1194,14 @@ footer button {
     .campo textarea {
         font-size: 20px;
     }
+
+    footer {
+        height: 125px;
+    }
+
+    #contato {
+        margin-bottom: 45px;
+    }
 }
 
 @media screen and (max-width: 360px) {
@@ -1168,6 +1220,10 @@ footer button {
     .card {
         width: 320px;
         height: 600px;
+    }
+
+    #contato {
+        margin-bottom: 45px;
     }
 }
 
@@ -1195,5 +1251,13 @@ footer button {
 
     #cases .box {
         padding-top: 16%;
+    }
+
+    footer {
+        height: 125px;
+    }
+
+    #contato {
+        margin-bottom: 45px;
     }
 }
