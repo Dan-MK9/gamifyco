@@ -6,27 +6,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GamifyCo</title>
     <link rel="shortcut icon" href="img/android-chrome-512x512.svg">
+     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Montserrat+Subrayada:wght@400;700&family=Rowdies:wght@300;400;700&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
 </head>
 
 <body>
     <header id="header">
         <div class="container-grid">
             <img src="img/Logo.svg" alt="Logo da empresa GamifyCo">
-            <nav class="menu">
+            <nav id="menu" class="menu">
                 <a href="#gamificacao" id="o-que-e-gamificacao">O QUE É GAMIFICAÇÃO</a>
                 <a href="#portifolio" id="se-jogue">SE JOGUE</a>
                 <a href="#cases" id="cases-de-sucesso">CASES DE SUCESSO</a>
                 <a href="#contato" id="contate-nos">CONTATE-NOS</a>
             </nav>
-            <button>
-                <svg id="icone-menu" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg>
-                <svg id="icone-fechado" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#ffffff" d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"/></svg>
+            <button onclick="MenuAB()">
+                <svg id="icone-barras" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg>
+                <svg id="icone-x" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"/></svg>
             </button>
         </div>
     </header>
@@ -113,21 +113,21 @@
         
         <h3>Entre em contato conosco agora mesmo e transforme os seus desafios em aventuras através do poder mágico da gamificação.</h3>
 
-        <form>
+        <form onsubmit="return solicitarServicos(event)">
             <div class="campo-esquerda">
                 <div class="campo">
                     <label for="campo-nome">Nome</label>
-                    <input id="campo-nome" text" placeholder="Digite seu nome...">
+                    <input required id="campo-nome" text placeholder="Digite seu nome...">
                 </div>
                 <div class="campo">
                     <label for="campo-email">Email</label>
-                    <input type="email" name="" id="campo-email" placeholder="Digite seu email..."> 
+                    <input required type="email" name="" id="campo-email" placeholder="Digite seu email..."> 
                 </div>
             </div>
             <div class="campo-direita">
                 <div class="campo">
                     <label for="campo-descricao">Descreva o seu problema</label>
-                    <textarea name="" id="campo-descricao" cols="30" rows="10" placeholder="Conte-nos sobre a sua empresa e o problema que ela enfrenta..."></textarea>
+                    <textarea required name="" id="campo-descricao" cols="30" rows="10" placeholder="Conte-nos sobre a sua empresa e o problema que ela enfrenta..."></textarea>
                 </div>
             </div>
         </form>
@@ -170,5 +170,5 @@
     </footer>
 
 </body>
-
+<script src="script.js"></script>
 </html>

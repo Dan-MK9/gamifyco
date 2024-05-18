@@ -530,6 +530,14 @@ footer button {
     font-size: 35px;
 }
 
+#icone-x {
+    display: none;
+}
+
+.menu-fechado {
+    display: none;
+}
+
 @media screen and (max-width: 1318px) {
     #portifolio .box {
         display: none;
@@ -1010,7 +1018,6 @@ footer button {
 @media screen and (max-width: 500px) {
     nav.menu {
         width: 100%;
-        display: none;
     }
     
     .box h2 {
