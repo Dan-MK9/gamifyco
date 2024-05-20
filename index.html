@@ -12,6 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Montserrat+Subrayada:wght@400;700&family=Rowdies:wght@300;400;700&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 
 <body>
@@ -113,7 +114,7 @@
         
         <h3>Entre em contato conosco agora mesmo e transforme os seus desafios em aventuras através do poder mágico da gamificação.</h3>
 
-        <form onsubmit="return solicitarServicos(event)">
+        <form onsubmit="solicitarServicos(event)">
             <div class="campo-esquerda">
                 <div class="campo">
                     <label for="campo-nome">Nome</label>
@@ -130,9 +131,8 @@
                     <textarea required name="" id="campo-descricao" cols="30" rows="10" placeholder="Conte-nos sobre a sua empresa e o problema que ela enfrenta..."></textarea>
                 </div>
             </div>
+            <button type="submit">Enviar</button>
         </form>
-
-        <button type="submit">Enviar</button>
     </section>
 
     <footer>
@@ -170,5 +170,4 @@
     </footer>
 
 </body>
-<script src="script.js"></script>
 </html>

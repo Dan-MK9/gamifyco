@@ -5,10 +5,14 @@ let iconeX = document.getElementById("icone-x")
 function MenuAB() {
     if (menu.classList.contains("menu-fechado")) {
         menu.classList.remove("menu-fechado")
+        menu.style.display = "flex"
+
         iconeX.style.display = "inline"
         iconeBarras.style.display = "none"
     } else {
         menu.classList.add("menu-fechado")
+        menu.style.display = "none"
+
         iconeX.style.display = "none"
         iconeBarras.style.display = "inline"
     }
@@ -16,6 +20,8 @@ function MenuAB() {
 
 window.onresize = () => {
     menu.classList.remove("menu-fechado")
+    menu.style.display = "flex"
+
     iconeX.style.display = "inline"
     iconeBarras.style.display = "none"
 }
@@ -31,7 +37,7 @@ const solicitarServico = (event) => {
         descricao: valorDescricao
     }
 
-    fetch("http://127.0.0.1:3000/solicitacoes", {
+    fetch("http://localhost:3000/solicitacoes", {
         method: "POST",
         headers:{
             "Content-Type": "application/json"
@@ -42,11 +48,11 @@ const solicitarServico = (event) => {
         console.log(resposta)
 
         document.querySelector("#contato form").reset()
-        alert("Solicitação cadastrada")
+        alert("Solicitação cadastrada com sucesso!")
     })
     .catch(erro => {
         console.error(erro)
-        alert("Erro na requisição")
+        alert("Ocorreu um erro na requisição")
     })
 
     event.preventDefault()

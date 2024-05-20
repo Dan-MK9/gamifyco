@@ -326,13 +326,14 @@ p {
 #contato form {
     display: flex;
     width: 100%;
-    justify-content: space-between;
+    justify-content: space-around;
 
     padding-bottom: 30px;
 
     color: white;
     font-family: "Inter";
     font-size: 22px;
+    flex-wrap: wrap;
 }
 
 .campo-esquerda {
@@ -535,7 +536,7 @@ footer button {
 }
 
 .menu-fechado {
-    display: none;
+    
 }
 
 @media screen and (max-width: 1318px) {
@@ -576,6 +577,7 @@ footer button {
     #portifolio .box {
         display: none;
     }
+    
 
     #gamificacao .box {
         display: none;
@@ -613,7 +615,7 @@ footer button {
         height: 500px;
         width: 350px;
 
-        display: flex;
+        display: none;
         flex-direction: column;
         justify-content: space-around;
         align-items: center;
@@ -837,6 +839,8 @@ footer button {
 
     #contato form {
         width: 90%;
+        display: flex;
+        align-items: center;
         flex-direction: column;
     }
 
@@ -1121,6 +1125,10 @@ footer button {
     }
     .card {
         width: 375px;
+    }
+
+    .container-cards {
+        gap: 80px;
     }
 
     #portifolio .box {
