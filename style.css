@@ -27,8 +27,8 @@ body {
 #header {
     height: 125px;
 
-    background: rgb(22,1,77);
-    background: linear-gradient(90deg, rgba(22,1,77,1) 20%, rgba(50,3,179,1) 70%);
+    background: rgb(22, 1, 77);
+    background: linear-gradient(90deg, rgba(22, 1, 77, 1) 20%, rgba(50, 3, 179, 1) 70%);
 
     background-position: 100% 50%;
 }
@@ -67,13 +67,13 @@ header button {
 }
 
 .menu a:hover {
-    text-decoration-color: rgba(242, 92, 5, 1); 
+    text-decoration-color: rgba(242, 92, 5, 1);
 }
 
 #banner {
     height: 845px;
-    
-    background: rgb(17,1,62);
+
+    background: rgb(17, 1, 62);
     background-image: url(img/banner\ proporcinal.png);
     background-repeat: no-repeat;
 
@@ -133,8 +133,8 @@ p {
     height: 570px;
     display: flex;
 
-    background: rgb(17,1,62);
-    background: linear-gradient(90deg, rgba(17,1,62,1) 0%, rgba(26,2,91,1) 100%);
+    background: rgb(17, 1, 62);
+    background: linear-gradient(90deg, rgba(17, 1, 62, 1) 0%, rgba(26, 2, 91, 1) 100%);
     border-radius: 50px;
 
     margin-bottom: 150px;
@@ -172,8 +172,8 @@ p {
 
 #portifolio {
     height: 570px;
-    
-    background-image: linear-gradient(243deg, rgba(17,1,62,1) 39%, rgba(58,4,208,0) 100%), url(img/Imagem\ do\ jogo.png);
+
+    background-image: linear-gradient(243deg, rgba(17, 1, 62, 1) 39%, rgba(58, 4, 208, 0) 100%), url(img/Imagem\ do\ jogo.png);
 
     position: relative;
 
@@ -184,7 +184,7 @@ p {
     width: 100%;
 }
 
-#portifolio .button{
+#portifolio .button {
     color: white;
     background-color: rgba(242, 92, 5, 1);
 
@@ -212,6 +212,8 @@ p {
 
 #portifolio .button:hover {
     background-color: rgba(58, 4, 208, 1);
+    transform: scale(1.08);
+    transition: .3s;
 }
 
 .container-text-s2 {
@@ -227,7 +229,7 @@ p {
     width: 420px;
 
     text-align: center;
-    
+
     padding-top: 110px;
 }
 
@@ -279,8 +281,8 @@ p {
     flex-direction: column;
     align-items: center;
 
-    background: rgb(17,1,62);
-    background: linear-gradient(180deg, rgba(17,1,62,1) 0%, rgba(26,2,91,1) 100%);
+    background: rgb(17, 1, 62);
+    background: linear-gradient(180deg, rgba(17, 1, 62, 1) 0%, rgba(26, 2, 91, 1) 100%);
 
     margin-top: 50px;
 
@@ -309,7 +311,7 @@ p {
     align-items: center;
 
     border-radius: 60px;
-    
+
     margin-top: 150px;
     margin-bottom: 150px;
 }
@@ -397,15 +399,18 @@ p {
     margin-bottom: 5px;
 }
 
-.campo input:focus, .campo textarea:focus {
+.campo input:focus,
+.campo textarea:focus {
     outline: 4px solid #F25C05;
 }
 
-.campo input, .campo textarea {
+.campo input,
+.campo textarea {
     transition: outline 0.3s ease;
 }
 
-.campo input:hover, .campo textarea:hover {
+.campo input:hover,
+.campo textarea:hover {
     outline: 4px solid #3A04D0;
 }
 
@@ -415,7 +420,7 @@ p {
 
     font-family: "Rowdies";
     font-size: 30px;
-    
+
     color: white;
     background-color: #F25C05;
 
@@ -431,13 +436,15 @@ p {
 
 #contato button:hover {
     background-color: #3A04D0;
+    transform: scale(1.08);
+    transition: .3s;
 }
 
 footer {
     height: 125px;
 
-    background: rgb(50,3,179);
-    background: linear-gradient(90deg, rgba(50,3,179,1) 0%, rgba(22,1,77,1) 100%);
+    background: rgb(50, 3, 179);
+    background: linear-gradient(90deg, rgba(50, 3, 179, 1) 0%, rgba(22, 1, 77, 1) 100%);
 }
 
 footer .container-grid {
@@ -506,10 +513,12 @@ footer button {
 
 .icones-redes a {
     color: white;
+    transition: .3s;
 }
 
 .icones-redes a:hover {
     color: #F25C05;
+    transform: scale(1.08);
 }
 
 #gamificacao .box {
@@ -536,8 +545,23 @@ footer button {
 }
 
 .menu-fechado {
-    
+    display: block;
 }
+
+#icones-redes {
+    width: 225px;
+    display: none;
+}
+
+#icones-redes a {
+    transition: .3s;
+}
+
+#icones-redes a:hover {
+    color: #F25C05;
+    transform: scale(1.08);
+}
+
 
 @media screen and (max-width: 1318px) {
     #portifolio .box {
@@ -577,7 +601,7 @@ footer button {
     #portifolio .box {
         display: none;
     }
-    
+
 
     #gamificacao .box {
         display: none;
@@ -626,6 +650,16 @@ footer button {
         top: 125px;
         right: 0px;
     }
+
+    .icones-redes {
+        display: none;
+    }
+
+    #icones-redes {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
 }
 
 @media screen and (max-width: 1198px) {
@@ -644,7 +678,7 @@ footer button {
     .vetores img {
         width: 450px;
     }
-    
+
 }
 
 @media screen and (max-width: 1160px) {
@@ -681,7 +715,7 @@ footer button {
 
     .container-text {
         width: 600px;
-        
+
         text-align: center;
         justify-content: center;
     }
@@ -704,12 +738,12 @@ footer button {
     #gamificacao .box {
         width: 100%;
         height: 135px;
-    
+
         background-color: #F25C05;
-    
+
         display: flex;
         align-items: center;
-        justify-content: center; 
+        justify-content: center;
     }
 
     #portifolio {
@@ -752,7 +786,7 @@ footer button {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-    
+
         margin-top: 0px;
     }
 
@@ -791,13 +825,13 @@ footer button {
         width: 100%;
         height: 1100px;
         background: var(--roxo-fundo);
-    
+
         display: flex;
         flex-direction: column;
         align-items: center;
-    
+
         border-radius: 60px;
-        
+
         margin-top: 150px;
         margin-bottom: 150px;
     }
@@ -875,7 +909,7 @@ footer button {
     .container-cards {
         padding-top: 50%;
     }
-    
+
     .screems2 {
         width: 70%;
     }
@@ -1023,7 +1057,7 @@ footer button {
     nav.menu {
         width: 100%;
     }
-    
+
     .box h2 {
         font-size: 25px;
     }
@@ -1090,6 +1124,7 @@ footer button {
         text-align: center;
         width: 300px;
     }
+
     .conteudo-banner h2 {
         font-size: 27px;
         width: 100%;
@@ -1120,9 +1155,11 @@ footer button {
     .screem {
         padding-top: 150px;
     }
+
     #gamificacao {
         height: 752px;
     }
+
     .card {
         width: 375px;
     }
@@ -1222,7 +1259,7 @@ footer button {
 @media screen and (max-width: 360px) {
     #header img {
         width: 250px;
-    }    
+    }
 
     .screem {
         padding-top: 150px;

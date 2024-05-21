@@ -26,7 +26,7 @@ window.onresize = () => {
     iconeBarras.style.display = "none"
 }
 
-const solicitarServico = (event) => {
+const solicitarServicos = (event) => {
     let valorNome = document.getElementById("campo-nome").value
     let valorEmail = document.getElementById("campo-email").value 
     let valorDescricao = document.getElementById("campo-descricao").value 
@@ -37,7 +37,7 @@ const solicitarServico = (event) => {
         descricao: valorDescricao
     }
 
-    fetch("http://localhost:3000/solicitacoes", {
+    fetch("http://127.0.0.1:3000/solicitacoes", {
         method: "POST",
         headers:{
             "Content-Type": "application/json"
@@ -48,7 +48,7 @@ const solicitarServico = (event) => {
         console.log(resposta)
 
         document.querySelector("#contato form").reset()
-        alert("Solicitação cadastrada com sucesso!")
+        alert("Sua solicitação foi cadastrada com sucesso!")
     })
     .catch(erro => {
         console.error(erro)
