@@ -886,6 +886,11 @@ footer button {
     #gamificacao h2{
         padding-bottom: 25%;
     }
+
+    #cases h3 {
+        width: 90%;
+    }
+    
     #contato form {
         width: 100%;
     }
@@ -905,7 +910,7 @@ footer button {
     }
 
     #cases h3 {
-        width: 100%;
+        width: 90%;
     }
 
     .icones-redes {
