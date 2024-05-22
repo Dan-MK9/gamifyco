@@ -140,8 +140,11 @@ p {
     margin-bottom: 150px;
 }
 
-.screem {
+#gamificacao .secao-gamificacao {
     display: none;
+    width: 100%;
+    height: 125px;
+    background-color: var(--laranja-de-cria);
 }
 
 .vetores {
@@ -521,11 +524,11 @@ footer button {
     transform: scale(1.08);
 }
 
-#gamificacao .box {
+#gamificacao .secao-gamificacao {
     display: none;
 }
 
-#portifolio .box {
+#portifolio .secao-portifolio {
     display: none;
 }
 
@@ -564,11 +567,11 @@ footer button {
 
 
 @media screen and (max-width: 1318px) {
-    #portifolio .box {
+    #portifolio .secao-portifolio {
         display: none;
     }
 
-    #gamificacao .box {
+    #gamificacao .secao-gamificacao {
         display: none;
     }
 
@@ -584,11 +587,11 @@ footer button {
 }
 
 @media screen and (max-width: 1265px) {
-    #portifolio .box {
+    #portifolio .secao-portifolio {
         display: none;
     }
 
-    #gamificacao .box {
+    #gamificacao .secao-gamificacao {
         display: none;
     }
 
@@ -598,17 +601,19 @@ footer button {
 }
 
 @media screen and (max-width: 1245px) {
-    #portifolio .box {
+    #portifolio .secao-portifolio {
         display: none;
     }
 
 
-    #gamificacao .box {
+    #gamificacao .secao-gamificacao {
         display: none;
     }
 
     #banner {
         max-height: 700px;
+
+        padding-bottom: 800px;
 
         background-image: url(img/banner\ responsivo.png);
         background-repeat: no-repeat;
@@ -663,11 +668,11 @@ footer button {
 }
 
 @media screen and (max-width: 1198px) {
-    #portifolio .box {
+    #portifolio .secao-portifolio {
         display: none;
     }
 
-    #gamificacao .box {
+    #gamificacao .secao-gamificacao {
         display: none;
     }
 
@@ -703,47 +708,29 @@ footer button {
 }
 
 @media screen and (max-width: 1000px) {
-    .screem {
-        display: flex;
-        justify-content: center;
-        padding-top: 180px;
-    }
-
     .vetores img {
         display: none;
     }
 
-    .container-text {
-        width: 600px;
-
-        text-align: center;
-        justify-content: center;
+    #gamificacao h2{
+        padding-bottom: 22%;
     }
 
-    .container-text {
-        display: none;
+    #gamificacao .container-text {
+        width: 100%;
+
+        padding-top: 24%;
+        display: flex;
+        justify-content: center;
     }
 
     #gamificacao {
-        margin-bottom: 40px;
-        flex-direction: column;
+        margin-bottom: 500px;
         border-radius: 0px;
         background-image: none;
-        background-color: var(--roxo-fundo);
-        height: 725px;
+        background-color: var(--laranja-de-cria);
+        height: 125px;
         width: 100%;
-        justify-content: center;
-    }
-
-    #gamificacao .box {
-        width: 100%;
-        height: 135px;
-
-        background-color: #F25C05;
-
-        display: flex;
-        align-items: center;
-        justify-content: center;
     }
 
     #portifolio {
@@ -758,7 +745,7 @@ footer button {
         display: none;
     }
 
-    #portifolio .box {
+    #portifolio .secao-portifolio {
         width: 100%;
         height: 135px;
 
@@ -810,11 +797,7 @@ footer button {
 
     #cases h2 {
         margin-left: 0;
-        margin-bottom: 70px;
-    }
-
-    .screems2 {
-        margin-top: 50px;
+        margin-bottom: 120px;
     }
 
     .container-cards {
@@ -896,22 +879,29 @@ footer button {
 }
 
 @media screen and (max-width: 900px) {
+    #gamificacao .container-text {
+        padding-top: 27%;
+    }
+
+    #gamificacao h2{
+        padding-bottom: 25%;
+    }
     #contato form {
         width: 100%;
     }
 }
 
 @media screen and (max-width: 800px) {
+    #gamificacao .container-text {
+        padding-top: 31%;
+    }
+
     .card {
         height: 500px;
     }
 
     .container-cards {
         padding-top: 50%;
-    }
-
-    .screems2 {
-        width: 70%;
     }
 
     #cases h3 {
@@ -950,6 +940,14 @@ footer button {
 }
 
 @media screen and (max-width: 700px) {
+    #gamificacao .container-text {
+        padding-top: 37%;
+    }
+
+    #gamificacao h2 {
+        padding-bottom: 27%;
+    }
+
     .card {
         height: 500px;
     }
@@ -962,6 +960,10 @@ footer button {
         padding-top: 70%;
     }
 
+    #contato .box {
+        padding-top: 7%;
+    }
+
     footer {
         height: 200px;
     }
@@ -971,17 +973,37 @@ footer button {
     }
 }
 
-@media screen and (max-width: 651px) {
-    #portifolio .box {
+@media screen and (max-width: 653px) {
+    #gamificacao .container-text {
+        padding-top: 40%;
+    }
+
+    #gamificacao h2 {
+        padding-bottom: 28%;
+    }
+
+    #portifolio .secao-portifolio {
         padding-top: 7%;
     }
 
     .container-cards {
         padding-top: 70%;
     }
+
+    .redes-sociais {
+        width: 10%;
+    }
 }
 
 @media screen and (max-width: 600px) {
+    #banner {
+        padding-bottom: 725px;
+    }
+    
+    #gamificacao .container-text {
+        padding-top: 42%;
+    }
+
     h2 {
         font-size: 30px;
     }
@@ -1006,7 +1028,7 @@ footer button {
         padding-top: 85%;
     }
 
-    #portifolio .box {
+    #portifolio .secao-portifolio {
         padding-top: 9%;
     }
 
@@ -1044,12 +1066,28 @@ footer button {
 }
 
 @media screen and (max-width: 520px) {
+    #gamificacao .container-text {
+        padding-top: 52%;
+    }
+
+    #gamificacao h2 {
+        padding-bottom: 33%;
+    }
+
     .conteudo-banner h2 {
         width: 445px;
     }
 
     .conteudo-banner h3 {
         width: 425px;
+    }
+
+    .container-cards {
+        gap: 100px;
+    }
+
+    .card {
+        width: 467px;
     }
 }
 
@@ -1058,15 +1096,27 @@ footer button {
         width: 100%;
     }
 
+    #gamificacao .container-text {
+        padding-top: 55%;
+    }
+
+    #gamificacao h2 {
+        padding-bottom: 31%;
+    }
+
+    h2 {
+        font-size: 27px;
+    }
+
     .box h2 {
-        font-size: 25px;
+        font-size: 27px;
     }
 
     #cases .box {
         padding-top: 11%;
     }
 
-    #portifolio .box {
+    #portifolio .secao-portifolio {
         padding-top: 11%;
     }
 
@@ -1079,7 +1129,7 @@ footer button {
     }
 
     .card {
-        width: 430px;
+        width: 449px;
     }
 
     .redes-sociais {
@@ -1093,6 +1143,19 @@ footer button {
 }
 
 @media screen and (max-width: 460px) {
+    #banner {
+        padding-bottom: 740px;
+    }
+
+    #gamificacao .container-text {
+        padding-top: 56%;
+    }
+
+    #gamificacao h2 {
+        padding-bottom: 37%;
+        text-align: center;
+    }
+
     h2 {
         font-size: 25px;
     }
@@ -1103,6 +1166,10 @@ footer button {
 
     p {
         font-size: 20px;
+    }
+
+    .box h2 {
+        font-size: 25px;
     }
 
     footer button svg {
@@ -1152,12 +1219,14 @@ footer button {
 }
 
 @media screen and (max-width: 420px) {
-    .screem {
-        padding-top: 150px;
+
+    #gamificacao .container-text {
+        padding-top: 63%;
     }
 
-    #gamificacao {
-        height: 752px;
+    #gamificacao h2 {
+        padding-bottom: 39%;
+        text-align: center;
     }
 
     .card {
@@ -1168,7 +1237,7 @@ footer button {
         gap: 80px;
     }
 
-    #portifolio .box {
+    #portifolio .secao-portifolio {
         padding-top: 13%;
     }
 
@@ -1206,11 +1275,19 @@ footer button {
         height: 700px;
     }
 
+    #gamificacao .container-text {
+        padding-top: 68%;
+    }
+
+    #gamificacao h2 {
+        text-align: center;
+    }
+
     #cases .box {
         padding-top: 14%;
     }
 
-    #portifolio .box {
+    #portifolio .secao-portifolio {
         padding-top: 14%;
     }
 
@@ -1219,7 +1296,7 @@ footer button {
     }
 
     .card {
-        width: 350px;
+        width: 360px;
     }
 
     .container-cards {
@@ -1261,8 +1338,16 @@ footer button {
         width: 250px;
     }
 
-    .screem {
-        padding-top: 150px;
+    #banner {
+        padding-bottom: 770px;
+    }
+
+    h2 {
+        font-size: 25px;
+    }
+
+    #gamificacao .container-text {
+        padding-top: 77%;
     }
 
     .container-cards {
@@ -1284,8 +1369,17 @@ footer button {
         width: 220px;
     }
 
-    .screem {
-        padding-top: 100px;
+    #banner {
+        padding-bottom: 800px;
+    }
+
+    #gamificacao .container-text {
+        padding-top: 88%;
+    }
+
+    #gamificacao h2 {
+        padding-bottom: 31%;
+        text-align: center;
     }
 
     .card {
@@ -1297,7 +1391,7 @@ footer button {
         padding-top: 150%;
     }
 
-    #portifolio .box {
+    #portifolio .secao-portifolio {
         padding-top: 16%;
     }
 
