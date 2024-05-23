@@ -236,7 +236,7 @@ p {
     padding-top: 110px;
 }
 
-#cases .box {
+#cases .cases-responsivo {
     display: none;
 }
 
@@ -528,11 +528,11 @@ footer button {
     display: none;
 }
 
-#portifolio .secao-portifolio {
+#portifolio .portifolio-responsivo {
     display: none;
 }
 
-#contato .box {
+#contato .contato-responsivo {
     display: none;
 }
 
@@ -567,7 +567,7 @@ footer button {
 
 
 @media screen and (max-width: 1318px) {
-    #portifolio .secao-portifolio {
+    #portifolio .portifolio-responsivo {
         display: none;
     }
 
@@ -587,7 +587,7 @@ footer button {
 }
 
 @media screen and (max-width: 1265px) {
-    #portifolio .secao-portifolio {
+    #portifolio .portifolio-responsivo {
         display: none;
     }
 
@@ -601,7 +601,7 @@ footer button {
 }
 
 @media screen and (max-width: 1245px) {
-    #portifolio .secao-portifolio {
+    #portifolio .portifolio-responsivo {
         display: none;
     }
 
@@ -668,7 +668,7 @@ footer button {
 }
 
 @media screen and (max-width: 1198px) {
-    #portifolio .secao-portifolio {
+    #portifolio .portifolio-responsivo {
         display: none;
     }
 
@@ -745,7 +745,7 @@ footer button {
         display: none;
     }
 
-    #portifolio .secao-portifolio {
+    #portifolio .portifolio-responsivo {
         width: 100%;
         height: 135px;
 
@@ -767,6 +767,30 @@ footer button {
         padding-top: 270px;
     }
 
+    #portifolio .button-responsivo {
+        color: white;
+        background-color: rgba(242, 92, 5, 1);
+        position: absolute;
+        top: calc(4% - 29px);
+        bottom: 20px;
+        height: 135px;
+        width: 100%;
+        overflow-y: hidden;
+        border: none;
+        font-family: "Montserrat Subrayada";
+        font-size: 35px;
+        font-weight: 900;
+        cursor: pointer;
+        text-transform: uppercase;
+        transition: background-color 200ms ease;
+    }
+
+    #portifolio .button-responsivo:hover {
+        background-color: rgba(58, 4, 208, 1);
+        transform: scale(1.08);
+        transition: .3s;
+    }
+
     #cases {
         width: 100%;
         display: flex;
@@ -781,7 +805,7 @@ footer button {
         display: none;
     }
 
-    #cases .box {
+    #cases .cases-responsivo {
         width: 100%;
         height: 135px;
 
@@ -819,7 +843,7 @@ footer button {
         margin-bottom: 150px;
     }
 
-    #contato .box {
+    #contato .contato-responsivo {
         width: 100%;
         height: 135px;
 
@@ -957,7 +981,7 @@ footer button {
         height: 500px;
     }
 
-    #cases .box {
+    #cases .cases-responsivo {
         padding-top: 7%;
     }
 
@@ -965,7 +989,7 @@ footer button {
         padding-top: 70%;
     }
 
-    #contato .box {
+    #contato .contato-responsivo {
         padding-top: 7%;
     }
 
@@ -987,7 +1011,7 @@ footer button {
         padding-bottom: 28%;
     }
 
-    #portifolio .secao-portifolio {
+    #portifolio .portifolio-responsivo {
         padding-top: 7%;
     }
 
@@ -1021,11 +1045,7 @@ footer button {
         height: 600px;
     }
 
-    .box h2 {
-        font-size: 27px;
-    }
-
-    #cases .box {
+    #cases .cases-responsivo {
         padding-top: 9%;
     }
 
@@ -1033,11 +1053,15 @@ footer button {
         padding-top: 85%;
     }
 
-    #portifolio .secao-portifolio {
+    #portifolio .portifolio-responsivo {
         padding-top: 9%;
     }
 
-    #contato .box {
+    #portifolio .button-responsivo {
+        font-size: 30px;
+    }
+
+    #contato .contato-responsivo {
         padding-top: 9%;
     }
 
@@ -1113,19 +1137,19 @@ footer button {
         font-size: 27px;
     }
 
-    .box h2 {
+    #cases .cases-responsivo {
+        padding-top: 11%;
+    }
+
+    #portifolio .portifolio-responsivo {
+        padding-top: 11%;
+    }
+
+    #portifolio .button-responsivo {
         font-size: 27px;
     }
 
-    #cases .box {
-        padding-top: 11%;
-    }
-
-    #portifolio .secao-portifolio {
-        padding-top: 11%;
-    }
-
-    #contato .box {
+    #contato .contato-responsivo {
         padding-top: 11%;
     }
 
@@ -1156,6 +1180,10 @@ footer button {
         padding-top: 56%;
     }
 
+    #portifolio .button-responsivo {
+        font-size: 25px;
+    }
+
     #gamificacao h2 {
         padding-bottom: 37%;
         text-align: center;
@@ -1173,10 +1201,6 @@ footer button {
         font-size: 20px;
     }
 
-    .box h2 {
-        font-size: 25px;
-    }
-
     footer button svg {
         display: none;
     }
@@ -1190,11 +1214,6 @@ footer button {
         margin-right: 15px;
         width: 92%;
         padding-top: 310px;
-    }
-
-    .box h2 {
-        text-align: center;
-        width: 300px;
     }
 
     .conteudo-banner h2 {
@@ -1242,7 +1261,7 @@ footer button {
         gap: 80px;
     }
 
-    #portifolio .secao-portifolio {
+    #portifolio .portifolio-responsivo {
         padding-top: 13%;
     }
 
@@ -1250,11 +1269,11 @@ footer button {
         padding-top: 300px;
     }
 
-    #cases .box {
+    #cases .cases-responsivo {
         padding-top: 13%;
     }
 
-    #contato .box {
+    #contato .contato-responsivo {
         padding-top: 13%;
     }
 
@@ -1288,15 +1307,15 @@ footer button {
         text-align: center;
     }
 
-    #cases .box {
+    #cases .cases-responsivo {
         padding-top: 14%;
     }
 
-    #portifolio .secao-portifolio {
+    #portifolio .portifolio-responsivo {
         padding-top: 14%;
     }
 
-    #contato .box {
+    #contato .contato-responsivo {
         padding-top: 14%;
     }
 
@@ -1396,11 +1415,11 @@ footer button {
         padding-top: 150%;
     }
 
-    #portifolio .secao-portifolio {
+    #portifolio .portifolio-responsivo {
         padding-top: 16%;
     }
 
-    #cases .box {
+    #cases .cases-responsivo {
         padding-top: 16%;
     }
 
